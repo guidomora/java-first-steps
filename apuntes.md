@@ -1,0 +1,94 @@
+## Que es un objeto?
+
+Cualquier objeto de la vida real que va a tener:
+
+- Datos
+- Funciones --> Metodos
+
+Cada objeto es unico e irrepetible. Comparten metodos y atributos
+
+**Una clase es el molde de un objeto**
+
+**Clase** Perro
+
+_Atributos_:
+
+- nombre,
+- raza,
+- color,4
+
+_Metodos_:
+
+- dormir()
+- comer()
+
+## Encapsulamiento
+
+Poner en una misma capsula (clase) los datos y operaciones posibles sobre ese dato
+
+**Ocultamiento** : Mecanismo controlado para acceder a los atributos de las clases **getters y setters**
+
+## Polimorfismo
+
+Capacidad que puede tener un metodo de una clase de actuar de distinta forma en funcion de los parametros que recibe
+
+- Ejemplo: el metodo speak() en la clase animal
+  - perro ---> Woof
+  - gato ---> Meow
+  - vaca ---> Moo
+
+## Herencia
+
+Hay un padre y los hijos heredan ciertas caracteristicas
+
+## Repaso UML
+
+_Lenguaje unificado de modelado_
+
+2 grandes ramas:
+
+**Diagramas de estructura:**
+
+- diagrama de clases
+- diagrama de objetos (revisa el diagrama de clases)
+- diagrama de componentes
+- diagrama de estructura compuesta
+- diagrama de paquetes
+
+**Diagramas de comportamiento**
+
+- diagrama de actividad (paso a paso del proceso)
+- diagrama de casos de uso (como un actor interactua con el sistema para completar un proceso)
+- diagrama de maquina de estado (describir el comportamiento de un objeto segun eventos externos o internos)
+- diagrama de interaccion
+  - diagrama de secuencia
+  - diagrama global de interaccion
+  - diagrama de comunicacion
+  - diagrama de tiempos
+
+## Relaciones entre objetos
+
+**1 Cardinalidad**
+
+cuantos objetos existen de cada lado de la relacion.
+A y B
+
+- uno a uno
+- uno a muchos, o muchos a uno
+- muchos a muchos
+
+**2 Direccionalidad**
+- Relacion unidireccional:
+    - para cada objeto de un lado de la relacion corresponden uno mas objetos del otro lado de la relacion
+    - Ejemplo: biblioteca, cada usuario puede tener 0 o muchos libros
+- Relacion bidireccional:
+    - para cada objeto de un lado de la relacion le corresponden muchos objetos del otro lado, y viceversa
+    - Ejemplo: una empresa necesita saber 2 tipos de info.
+        - que proyectos tiene un programador. 
+        - que programador esta asignado en cada proyecto
+
+**3 Ordindalidad:**
+
+*Agregacion:* un objeto (contenedor) usa a otro objeto (contenido) para realizar alguna funcionalidad
+
+*Composicion:* un objeto (compuesto) es dueño de otro objeto (componente) y el componente no tiene razon de existir sin el compuesto
