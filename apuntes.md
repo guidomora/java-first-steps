@@ -92,3 +92,54 @@ A y B
 *Agregacion:* un objeto (contenedor) usa a otro objeto (contenido) para realizar alguna funcionalidad
 
 *Composicion:* un objeto (compuesto) es dueño de otro objeto (componente) y el componente no tiene razon de existir sin el compuesto
+
+## Sobre carga de metodos
+
+**2 metodos**
+
+- implementando 2 o mas metodos que tienen el mismo nombre, pero toman un numero diferente de argumentos.
+Aca el metodo funciona segun la cantidad de argumetos. Ej si se dan 2 argumentos, ejecuta el metodo que recibe 2 argumentos, si recibe 3 ejectua el metodo que recibe 3
+
+
+
+- implementando 2 o mas metodos que tienen el mismo nombre, pero toman argumentos de diferentes tipos
+Aca se ejecuta segun el tipo, si coincide con el tipo del argumento que recibe el metodo, se ejecuta el metodo que corresponde
+
+## Casteo o promocion de tipos
+
+Es la conversion de un tipo de dato a otro.
+En un metodo podes recibir argumentos de distintos tipos pero podes convertirlos al tipo que quieras
+
+```
+    public float toFloat(int a, int b){
+        return a + b;
+    }
+```
+
+## Sobreescritura (@Override)
+
+siempre hay que usar el extends, asi se hereda el metodo 
+
+```
+// Clase Padre
+class Animal {
+    public void sonido() {
+        System.out.println("El animal hace un sonido");
+    }
+}
+
+// Clase Hija
+class Perro extends Animal {
+    @Override
+    public void sonido() {
+        System.out.println("El perro ladra");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal miPerro = new Perro();
+        miPerro.sonido();  // Llama al método sobrescrito en la clase Perro
+    }
+}
+```
