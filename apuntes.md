@@ -143,3 +143,38 @@ public class Main {
     }
 }
 ```
+
+## Patrones
+
+**GRASP** General responsability Assigment Software Patterns
+
+Serie de buenas practicas 
+
+6 patrones dentro de GRASP
+
+- Experto en informacion -> la responsabilidad de una tarea a la clase que tiene la informacion necesaria para cumplirla. Esto fomenta la cohesion dentro de las clases
+
+- Creador -> quien es el responsable de la creacion de objetos o clases
+
+- Controlador -> intermediario entre una intefaz y el algoritmo que lo va a implementar. Recibe los datos del usuario y los envia a las ditintas clases segun el metodo que sea llamado
+    - MVC -> Modelo, clases que acceden a la db, Controlador clases que controlan la logica del negocio, Vista tener la interaccion con el usuario
+
+- Alta cohesion y Bajo acoplamiento
+    - Alta cohesion -> lo coherente que es la info que almacena una clase
+    - Bajo acoplamiento -> la vinculacion que tiene una clase con otra. Como un cambio en una clase afecta a las demas
+
+- Polimorfismo -> varias clases de comportan de manera distinta, dependiendo del tipo de necesidad
+
+- Fabricacion pura -> ayudan a reducir el acoplamiento, incrementar la cohesion o simplificar el diseño. Pero no hay que abusar 
+
+**SOLID**
+
+cuando se aplican estos principios, lo mas probable es que sea sencillo de mantener y emplear
+
+- Single responsability principle -> la clase solo deberia concentrarse en hacer una cosa
+- Open close principle -> las clases deben estar abiertas para la extension, pero cerradas a la modificacion
+- Liskov sustitution principle -> las subclases deben comportarse adecuadamente cuando sean usadas en lugar se sus clases bases
+- Interface Segregation Principle -> es preferible tener una interfaz especifica, en vez de usar una gral
+- Dependency Inversion Principle -> Nuestro codigo debe depender de abstracciones y no de compresiones
+
+
