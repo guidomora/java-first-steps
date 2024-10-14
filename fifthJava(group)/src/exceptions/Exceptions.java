@@ -8,7 +8,7 @@ import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-class App {
+class Exceptions {
     public static void main(String[] args) {
         File inputFile = new File("data.txt");
         File outputFile = new File("output.txt");
